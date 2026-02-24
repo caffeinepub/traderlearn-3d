@@ -1,0 +1,4 @@
+{
+  "frontend/src/pages/PriceActionModule.tsx": "Complete Price Action learning module page covering 5 candlestick patterns (Pin Bar, Bullish/Bearish Engulfing, Doji, Morning Star) with animated charts, support/resistance diagrams, trend identification, breakout patterns, and a Mark as Complete button.",
+  "frontend/src/pages/IndicatorsModule.tsx": "Complete Technical Indicators learning module page covering Moving Averages, RSI, MACD, Bollinger Bands, and Volume — each with a canvas chart visualization, how-to-read guide, practical tips, and a Mark as Complete button."
+}

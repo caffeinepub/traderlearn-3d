@@ -1,0 +1,169 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-design-and-implement-a-visually-immersive-3d-hero-environment-using-three-js-react-three-fiber-as-the-landing-experience-the-scene-should-feature-a-dark-futuristic-trading-floor-aesthetic-with-floating-charts-candlestick-formations-and-animated-particle-systems-typography-should-use-a-clean-modern-font-with-gold-amber-accent-colors-on-a-near-black-background",
+      "featureTitle": "Design and implement a visually immersive 3D hero environment using Three.js / React Three Fiber as the landing experience. The scene should feature a dark, futuristic trading floor aesthetic with floating charts, candlestick formations, and animated particle systems. Typography should use a clean, modern font with gold/amber accent colors on a near-black background.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Hero3D.tsx",
+        "frontend/src/index.css",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-3d-interactive-module-card-navigation-system-on-the-homepage-display-four-learning-module-cards-in-a-3d-carousel-or-grid-smt-smart-money-technique-ict-inner-circle-trader-price-action-and-indicators-each-card-should-float-in-3d-space-with-hover-animations-and-transition-effects-when-selected",
+      "featureTitle": "Create a 3D interactive module card navigation system on the homepage. Display four learning module cards in a 3D carousel or grid — SMT (Smart Money Technique), ICT (Inner Circle Trader), Price Action, and Indicators. Each card should float in 3D space with hover animations and transition effects when selected.",
+      "files": [
+        "frontend/src/components/ModuleCard3D.tsx",
+        "frontend/src/components/ModuleCarousel.tsx",
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-an-smt-smart-money-technique-learning-module-page-include-sections-covering-definition-and-origin-of-smt-core-principles-liquidity-sweeps-institutional-order-flow-displacement-visual-diagram-illustrations-embedded-as-interactive-3d-or-2d-annotated-charts-and-a-concept-summary-card-use-static-educational-content",
+      "featureTitle": "Build an SMT (Smart Money Technique) learning module page. Include sections covering: definition and origin of SMT, core principles (liquidity sweeps, institutional order flow, displacement), visual diagram illustrations embedded as interactive 3D or 2D annotated charts, and a concept summary card. Use static educational content.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/ConceptDiagram.tsx",
+        "frontend/src/pages/SMTModule.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-an-ict-inner-circle-trader-learning-module-page-include-sections-covering-what-ict-methodology-is-core-concepts-order-blocks-fair-value-gaps-market-structure-kill-zones-optimal-trade-entry-annotated-visual-examples-and-a-summary-use-static-educational-content",
+      "featureTitle": "Build an ICT (Inner Circle Trader) learning module page. Include sections covering: what ICT methodology is, core concepts (order blocks, fair value gaps, market structure, kill zones, optimal trade entry), annotated visual examples, and a summary. Use static educational content.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/ICTModule.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-price-action-learning-module-page-include-sections-on-candlestick-patterns-pin-bar-engulfing-doji-support-and-resistance-trend-identification-and-breakout-patterns-include-3d-or-stylized-2d-animated-candlestick-chart-visualizations-rendered-with-three-js-or-css-svg-use-static-educational-content",
+      "featureTitle": "Build a Price Action learning module page. Include sections on: candlestick patterns (pin bar, engulfing, doji), support and resistance, trend identification, and breakout patterns. Include 3D or stylized 2D animated candlestick chart visualizations rendered with Three.js or CSS/SVG. Use static educational content.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/AnimatedCandlestickChart.tsx",
+        "frontend/src/pages/PriceActionModule.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-technical-indicators-learning-module-page-include-sections-on-commonly-used-indicators-moving-averages-sma-ema-rsi-relative-strength-index-macd-bollinger-bands-and-volume-each-indicator-should-have-a-brief-explanation-how-to-read-it-and-a-visual-chart-mockup-rendered-using-three-js-or-svg-use-static-educational-content",
+      "featureTitle": "Build a Technical Indicators learning module page. Include sections on commonly used indicators: Moving Averages (SMA/EMA), RSI (Relative Strength Index), MACD, Bollinger Bands, and Volume. Each indicator should have a brief explanation, how to read it, and a visual chart mockup rendered using Three.js or SVG. Use static educational content.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/IndicatorChart.tsx",
+        "frontend/src/pages/IndicatorsModule.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-persistent-navigation-bar-that-displays-the-app-name-logo-and-links-to-each-of-the-four-learning-modules-the-nav-should-be-semi-transparent-with-a-glass-morphism-effect-to-complement-the-dark-3d-aesthetic",
+      "featureTitle": "Implement a persistent navigation bar that displays the app name/logo and links to each of the four learning modules. The nav should be semi-transparent with a glass-morphism effect to complement the dark 3D aesthetic.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-module-completion-progress-on-the-homepage-show-a-progress-indicator-e-g-a-glowing-progress-ring-or-bar-for-each-module-card-based-on-the-backend-completion-state-allow-users-to-mark-modules-complete-from-within-each-module-page",
+      "featureTitle": "Display module completion progress on the homepage. Show a progress indicator (e.g., a glowing progress ring or bar) for each module card based on the backend completion state. Allow users to mark modules complete from within each module page.",
+      "files": [
+        "frontend/src/components/CompleteButton.tsx",
+        "frontend/src/components/ModuleCard3D.tsx",
+        "frontend/src/components/ModuleCarousel.tsx",
+        "frontend/src/pages/ICTModule.tsx",
+        "frontend/src/pages/IndicatorsModule.tsx",
+        "frontend/src/pages/PriceActionModule.tsx",
+        "frontend/src/pages/SMTModule.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

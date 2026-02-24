@@ -1,0 +1,194 @@
+{
+  "kind": "build_request",
+  "title": "3D Interactive Trader Education Website",
+  "projectName": "TraderVerse Academy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Design and implement a visually immersive 3D hero environment using Three.js / React Three Fiber as the landing experience. The scene should feature a dark, futuristic trading floor aesthetic with floating charts, candlestick formations, and animated particle systems. Typography should use a clean, modern font with gold/amber accent colors on a near-black background.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a 3d website which helps traders learn concepts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Landing page renders a 3D interactive scene with visible candlestick or chart elements",
+        "Scene uses gold/amber accent colors on a dark background",
+        "Animated particles or floating elements are present in the scene",
+        "Page is responsive and performs smoothly"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create a 3D interactive module card navigation system on the homepage. Display four learning module cards in a 3D carousel or grid — SMT (Smart Money Technique), ICT (Inner Circle Trader), Price Action, and Indicators. Each card should float in 3D space with hover animations and transition effects when selected.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "smt,ict,price action,indicators"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Four module cards are visible: SMT, ICT, Price Action, Indicators",
+        "Cards have 3D hover/tilt animations",
+        "Clicking a card navigates to that module's detail page",
+        "Cards display module title, a short tagline, and an icon or visual"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build an SMT (Smart Money Technique) learning module page. Include sections covering: definition and origin of SMT, core principles (liquidity sweeps, institutional order flow, displacement), visual diagram illustrations embedded as interactive 3D or 2D annotated charts, and a concept summary card. Use static educational content.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "smt"
+        ]
+      },
+      "acceptanceCriteria": [
+        "SMT module page is accessible from the homepage card",
+        "Page contains at minimum 3 educational sections on SMT concepts",
+        "At least one visual/diagram is rendered to illustrate SMT logic",
+        "A summary or key takeaways section is present"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build an ICT (Inner Circle Trader) learning module page. Include sections covering: what ICT methodology is, core concepts (order blocks, fair value gaps, market structure, kill zones, optimal trade entry), annotated visual examples, and a summary. Use static educational content.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "ict"
+        ]
+      },
+      "acceptanceCriteria": [
+        "ICT module page is accessible from the homepage card",
+        "Page covers at minimum: order blocks, fair value gaps, market structure, kill zones",
+        "Visual examples or diagrams illustrate each concept",
+        "Navigation back to homepage is available"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Build a Price Action learning module page. Include sections on: candlestick patterns (pin bar, engulfing, doji), support and resistance, trend identification, and breakout patterns. Include 3D or stylized 2D animated candlestick chart visualizations rendered with Three.js or CSS/SVG. Use static educational content.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "price action"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Price Action module page is accessible from the homepage card",
+        "At least 4 candlestick pattern types are explained",
+        "Animated or interactive chart visualization is present",
+        "Support/resistance and trend content is included"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build a Technical Indicators learning module page. Include sections on commonly used indicators: Moving Averages (SMA/EMA), RSI (Relative Strength Index), MACD, Bollinger Bands, and Volume. Each indicator should have a brief explanation, how to read it, and a visual chart mockup rendered using Three.js or SVG. Use static educational content.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "indicators"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Indicators module page is accessible from the homepage card",
+        "At minimum 5 indicators are covered: MA, RSI, MACD, Bollinger Bands, Volume",
+        "Each indicator includes a chart or visual mockup",
+        "Practical reading tips are included for each"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement a persistent navigation bar that displays the app name/logo and links to each of the four learning modules. The nav should be semi-transparent with a glass-morphism effect to complement the dark 3D aesthetic.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navbar is visible on all pages",
+        "Navbar contains links to: Home, SMT, ICT, Price Action, Indicators",
+        "Glass-morphism or translucent dark styling is applied",
+        "Active link is visually highlighted"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement a backend data store in Motoko that persists progress tracking per module. Store a list of module IDs and a boolean completion status for each. Expose query and update calls to mark a module as completed and retrieve all module completion statuses.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "helps traders learn concepts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores completion status for at least 4 modules (smt, ict, priceAction, indicators)",
+        "getProgress query returns all module statuses",
+        "markComplete update call sets a module as completed",
+        "Data persists across canister upgrades"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Display module completion progress on the homepage. Show a progress indicator (e.g., a glowing progress ring or bar) for each module card based on the backend completion state. Allow users to mark modules complete from within each module page.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage shows visual progress state per module card",
+        "Completed modules show a distinct visual state (e.g., glowing ring, checkmark)",
+        "Each module page has a 'Mark as Complete' button",
+        "Completion state is fetched from the backend on load"
+      ]
+    }
+  ],
+  "constraints": [
+    "All 3D rendering must use Three.js with React Three Fiber — no external 3D engines",
+    "All educational content is static (no external API calls for content)",
+    "Backend logic must remain in a single Motoko actor in backend/main.mo",
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "No live market data feeds or real-time price charts",
+    "No user authentication or login system",
+    "No community forums, chat, or social features",
+    "No payment or subscription gating",
+    "No quizzes, grading, or certification system in this version"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Dark futuristic trading hero background with glowing candlestick chart lines and grid on a deep black background (hero-bg.dim_1920x1080.png)",
+      "Stylized gold candlestick pattern illustration showing bullish engulfing candle on dark background (candlestick-hero.dim_800x400.png)",
+      "Abstract glowing geometric logo mark for TraderVerse Academy — angular and sharp design in gold and white on transparent background (logo-mark.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

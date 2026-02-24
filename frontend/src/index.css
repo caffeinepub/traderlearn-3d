@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Dark trading theme - always dark */
+    --background: 0.1 0.005 260;
+    --foreground: 0.95 0.01 90;
+    --card: 0.14 0.008 260;
+    --card-foreground: 0.95 0.01 90;
+    --popover: 0.16 0.008 260;
+    --popover-foreground: 0.95 0.01 90;
+    --primary: 0.78 0.18 75;
+    --primary-foreground: 0.1 0.005 260;
+    --secondary: 0.18 0.01 260;
+    --secondary-foreground: 0.85 0.01 90;
+    --muted: 0.18 0.01 260;
+    --muted-foreground: 0.55 0.01 260;
+    --accent: 0.78 0.18 75;
+    --accent-foreground: 0.1 0.005 260;
+    --destructive: 0.65 0.22 25;
+    --destructive-foreground: 0.95 0.01 90;
+    --border: 0.25 0.015 260;
+    --input: 0.22 0.01 260;
+    --ring: 0.78 0.18 75;
+    --chart-1: 0.78 0.18 75;
+    --chart-2: 0.65 0.22 145;
+    --chart-3: 0.65 0.22 25;
+    --chart-4: 0.65 0.18 200;
+    --chart-5: 0.75 0.15 300;
+    --sidebar: 0.12 0.006 260;
+    --sidebar-foreground: 0.95 0.01 90;
+    --sidebar-primary: 0.78 0.18 75;
+    --sidebar-primary-foreground: 0.1 0.005 260;
+    --sidebar-accent: 0.18 0.01 260;
+    --sidebar-accent-foreground: 0.85 0.01 90;
+    --sidebar-border: 0.25 0.015 260;
+    --sidebar-ring: 0.78 0.18 75;
+    /* Custom tokens */
+    --gold: 0.78 0.18 75;
+    --gold-bright: 0.85 0.2 80;
+    --gold-dim: 0.6 0.14 70;
+    --green-trade: 0.65 0.22 145;
+    --red-trade: 0.65 0.22 25;
+    --surface-1: 0.14 0.008 260;
+    --surface-2: 0.18 0.01 260;
+    --surface-3: 0.22 0.012 260;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: oklch(0.16 0.008 260 / 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid oklch(0.78 0.18 75 / 0.15);
+  }
+
+  .glass-strong {
+    background: oklch(0.14 0.008 260 / 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid oklch(0.78 0.18 75 / 0.2);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 20px oklch(0.78 0.18 75 / 0.3), 0 0 40px oklch(0.78 0.18 75 / 0.1);
+  }
+
+  .gold-glow-text {
+    text-shadow: 0 0 20px oklch(0.78 0.18 75 / 0.6);
+  }
+
+  .gold-border {
+    border: 1px solid oklch(0.78 0.18 75 / 0.4);
+  }
+
+  .gold-border-bright {
+    border: 1px solid oklch(0.78 0.18 75 / 0.8);
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, oklch(0.78 0.18 75), oklch(0.65 0.14 70));
+  }
+
+  .gradient-gold-text {
+    background: linear-gradient(135deg, oklch(0.85 0.2 80), oklch(0.78 0.18 75), oklch(0.65 0.14 70));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-divider {
+    border-top: 1px solid oklch(0.78 0.18 75 / 0.15);
+  }
+
+  .candle-green {
+    color: oklch(0.65 0.22 145);
+  }
+
+  .candle-red {
+    color: oklch(0.65 0.22 25);
+  }
+
+  .bg-candle-green {
+    background-color: oklch(0.65 0.22 145);
+  }
+
+  .bg-candle-red {
+    background-color: oklch(0.65 0.22 25);
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.78 0.18 75 / 0.3) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: oklch(0.78 0.18 75 / 0.3);
+    border-radius: 2px;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 10px oklch(0.78 0.18 75 / 0.3); }
+  50% { box-shadow: 0 0 30px oklch(0.78 0.18 75 / 0.6), 0 0 60px oklch(0.78 0.18 75 / 0.2); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, oklch(0.78 0.18 75 / 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}

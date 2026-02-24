@@ -1,0 +1,54 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-24T22:40:00.112Z",
+  "summary": "The diff implements a comprehensive 3D trading education website with most requirements addressed. The backend Motoko actor is present with progress tracking, all four module pages are implemented, the navbar with glass-morphism is present, the 3D hero with React Three Fiber is implemented, 3D card navigation is present, and completion/progress features are wired up. However, the backend's data persistence across canister upgrades using stable storage appears unimplemented. A resetModule function was added to the backend that was not requested.",
+  "missing_requirements": [
+    {
+      "id": "REQ-8",
+      "requirement": "Data persists across canister upgrades",
+      "reason": "The Motoko actor uses Map.empty<Text, Bool>() which is heap memory and will be lost on canister upgrade. No stable var, stable storage, or preupgrade/postupgrade hooks are present in backend/main.mo.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "resetModule function in the Motoko backend that resets a module's completion status to false",
+      "reason": "The build request only asked for markComplete (set to completed) and getProgress (retrieve statuses). A resetModule update call was not requested anywhere in the build request.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "confidence": 0.82,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AnimatedCandlestickChart.tsx",
+    "frontend/src/components/CompleteButton.tsx",
+    "frontend/src/components/ConceptDiagram.tsx",
+    "frontend/src/components/Hero3D.tsx",
+    "frontend/src/components/IndicatorChart.tsx",
+    "frontend/src/components/ModuleCard3D.tsx",
+    "frontend/src/components/ModuleCarousel.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/Home.tsx",
+    "frontend/src/pages/ICTModule.tsx",
+    "frontend/src/pages/IndicatorsModule.tsx",
+    "frontend/src/pages/PriceActionModule.tsx",
+    "frontend/src/pages/SMTModule.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}
